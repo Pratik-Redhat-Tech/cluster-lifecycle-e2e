@@ -15,16 +15,16 @@ make build
 ## Running Tests
 
 ```bash
-./acm-tests-ext run-suite acm-lifecycle/all
-./acm-tests-ext run-suite acm-lifecycle/smoke
+./acm-tests-ext run-suite acm/lifecycle/all
+./acm-tests-ext run-suite acm/lifecycle/smoke
 ./acm-tests-ext list tests
 ./acm-tests-ext info
 ```
 
 ## Test Suites
 
-- `acm-lifecycle/all`
-- `acm-lifecycle/smoke`
+- `acm/lifecycle/all`
+- `acm/lifecycle/smoke`
 
 Scripts are embedded in the binary. The adapter extracts them to a temp directory at runtime and sets `INTEROP_SCRIPTS_DIR`. Shell scripts use exit `2` for skip conditions; the adapter maps that to OTE `skipped`.
 

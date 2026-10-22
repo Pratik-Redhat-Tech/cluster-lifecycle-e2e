@@ -7,7 +7,7 @@ build:
 	go build -o $(BINARY) ./cmd/acm-tests-ext/...
 
 test: build
-	./$(BINARY) run-suite acm-lifecycle/all
+	./$(BINARY) run-suite acm/lifecycle/all
 
 validate: build
 	@echo "==> Validating extension info..."
